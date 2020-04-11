@@ -11,6 +11,50 @@
         </a>
       </div>
 
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div
+            class="navbar-item"
+            v-for="(menu, i) in content.desktop.menu"
+            :key="`${menu.text + '-' + i}`"
+          >
+            <a v-if="!menu.children" href="#" class="navbar-item">{{menu.text}}</a>
+
+            <div v-else class="navbar-item is-hoverable">
+              <a href="#" class="navbar-link">{{menu.text}}</a>
+
+              <div class="navbar-dropdown">
+                <a
+                  v-for="(menu, i) in menu.children"
+                  :key="`${menu.text + '-' + i}`"
+                  href="#"
+                  class="navbar-item"
+                >
+                  <img
+                    v-if="menu.img && !menu.icon"
+                    class="menu-icon"
+                    :src="menu.img"
+                    :alt="`${menu.text} icon`"
+                  />
+                  <div class="text-wrapper">
+                    <p class="menu-text">{{menu.text}}</p>
+                    <p class="menu-sub-text">{{menu.subText}}</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="navbar-item">
+            <div class="menu-login">
+              <span>
+                <i class="material-icons">lock</i>
+              </span>
+              {{content.user.login}}
+            </div>
+          </a>
+        </div>
+      </div>
+
       <div class="menu navbar-item">
         <a class="cart center-content">
           <i class="material-icons">shopping_cart</i>
@@ -55,11 +99,15 @@ export default {
         logo: require("../../assets/hostinger-logo.webp"),
       },
       mobileMenuIsOpen: false,
+      dropMenu: false,
     };
   },
   methods: {
     toggleMobileMenu: function() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
+    },
+    toggleDropdown: function() {
+      this.dropMenu = !this.dropMenu;
     },
   },
 };
@@ -85,25 +133,51 @@ export default {
     margin-bottom: 30px;
     color: #43414f;
     padding: 0 25px;
-
-    .menu-icon {
-      margin-right: 20px;
-      color: $hostingerPurple;
-      width: 24px;
-      height: 24px;
-    }
-
-    .menu-text {
-      font-size: 12px;
-      font-weight: 700;
-      padding: 3px 0;
-      letter-spacing: 1.5px;
-    }
   }
 
   .clear-menu {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+.menu-icon {
+  margin-right: 20px;
+  color: $hostingerPurple;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-text {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 0;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-text {
+    font-size: 16px;
+  }
+}
+
+.menu-sub-text {
+  color: #9999ac;
+  font-size: 14px;
+}
+
+.menu-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 20px;
+
+  i {
+    font-size: 14px;
+    padding-right: 5px;
   }
 }
 
@@ -117,6 +191,24 @@ export default {
   .lang,
   .cart {
     color: white;
+  }
+
+  .navbar-menu a {
+    color: white;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.7;
+      background-color: transparent;
+    }
+  }
+
+  .navbar-dropdown {
+    border-radius: 5px;
+    a {
+      color: #43414f;
+      padding-left: 1rem;
+    }
   }
 
   #lang-text {
@@ -147,5 +239,9 @@ export default {
 
 .is-hidden {
   display: none;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: white;
 }
 </style>
