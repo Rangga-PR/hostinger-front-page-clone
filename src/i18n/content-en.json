@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "lang": "EN",
+    "mobile": {
+      "menu": [
+        {
+          "text": "Website Builder",
+          "linkto": "#"
+        },
+        {
+          "text": "Shared Web Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "Cloud Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "Email Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "Wordpress Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "VPS Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "Minecraft Hosting",
+          "linkto": "#"
+        },
+        {
+          "text": "Domain Checker",
+          "linkto": "#"
+        },
+        {
+          "text": "WHOIS Database",
+          "linkto": "#"
+        },
+        {
+          "text": "Pricing",
+          "linkto": "#"
+        }
+      ]
+    }
+  }
+}

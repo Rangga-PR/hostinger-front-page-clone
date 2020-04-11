@@ -1,27 +1,32 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Header :content="i18n.content.navbar" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/header/Header";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
   },
+  data() {
+    return {
+      i18n: require("./i18n/content-id.js"),
+    };
+  },
+  // created: function() {
+  //   console.log(this.i18n.content);
+  // },
 };
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
