@@ -1,19 +1,24 @@
 <template>
   <div id="app">
     <Header :content="i18n.content.navbar" />
-    <Button text="Tambahkan ke cart" variant="purple" class="btn" />
+    <div class="wrapper">
+      <Input placeholder="Ketik nama domain" icon="lock" />
+      <Button text="Cari domain" variant="red" />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from "./components/header/Header";
 import Button from "./components/button/Button";
+import Input from "./components/input/Input";
 
 export default {
   name: "App",
   components: {
     Header,
     Button,
+    Input,
   },
   data() {
     return {
@@ -32,5 +37,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rebeccapurple;
+}
+
+.wrapper {
+  display: flex;
 }
 </style>
