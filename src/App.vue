@@ -1,24 +1,25 @@
 <template>
   <div id="app">
     <Header :content="i18n.content.navbar" />
-    <div class="wrapper">
-      <Input placeholder="Ketik nama domain" icon="lock" />
-      <Button text="Cari domain" variant="red" />
-    </div>
+    <SearchDomainSection title="Cari nama domain yang diinginkan. Gratis!" />
+    <BuyNowSection
+      title="Mudah digunakan, cepat, dan dapat diandalkan"
+      subTitle="pilih paket hosting dan online website"
+    />
   </div>
 </template>
 
 <script>
 import Header from "./components/header/Header";
-import Button from "./components/button/Button";
-import Input from "./components/input/Input";
+import SearchDomainSection from "./components/searchdomainsection/SearchDomainSection";
+import BuyNowSection from "./components/buynowsection/BuyNowSection";
 
 export default {
   name: "App",
   components: {
     Header,
-    Button,
-    Input,
+    SearchDomainSection,
+    BuyNowSection,
   },
   data() {
     return {

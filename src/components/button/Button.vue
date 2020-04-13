@@ -3,7 +3,7 @@
     <span v-if="icon && iconPosition == 'left'" class="icon">
       <i class="material-icons">{{icon}}</i>
     </span>
-    <span>{{text}}</span>
+    <span v-if="text">{{text}}</span>
     <span v-if="icon && iconPosition == 'right'" class="icon">
       <i class="material-icons">{{icon}}</i>
     </span>
@@ -14,10 +14,7 @@
 export default {
   name: "h-button",
   props: {
-    text: {
-      type: String,
-      default: "Button",
-    },
+    text: String,
     icon: {
       type: String,
     },
@@ -49,7 +46,7 @@ export default {
   font-size: 16px;
   font-weight: 700;
   color: white;
-  opacity: 0.85;
+  opacity: 0.6;
   transition: 0.3s;
 
   &:hover {

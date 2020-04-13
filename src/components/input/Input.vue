@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p v-if="icon" class="control has-icons-right">
+    <p class="control has-icons-right">
       <input class="input" :class="[`is-${size}`]" :type="type" :placeholder="placeholder" />
       <span v-if="icon" class="icon is-small is-right">
         <i class="material-icons">{{icon}}</i>
