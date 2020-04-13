@@ -7,8 +7,77 @@ import minecraftHostingIcon from "../assets/minecraft-hosting-ico.svg";
 import domainCheckerIcon from "../assets/domain-checker-ico.svg";
 import domainTransferIcon from "../assets/domain-transfer-ico.svg";
 import whoisDatabaseIcon from "../assets/whois-database-ico.svg";
+import chatSupport from "../assets/chat-support.webp";
+import easyToSetup from "../assets/easy-to-setup.svg";
+import microLarge from "../assets/micro-large.svg";
+// import powerfulSlideone from "../assets/powerful_slide_1.webp";
+// import powerfulSlidethree from "../assets/powerful_slide_3.webp";
+import simplyFastWebsite from "../assets/simply-fast-websites.webp";
+import speedSlidetwo from "../assets/speed_slide_2.webp";
+import wpMadeEasy from "../assets/wp-made-easy.webp";
 
 export const content = {
+  featureSpotlight: {
+    title: "User-Friendly Control Panel",
+    img: speedSlidetwo,
+    features: [
+      {
+        title: "Kemudahan penggunaan",
+        desc:
+          "Hostinger Panel merupakan tool yang user-friendly sehingga dapat digunakan oleh para pemula di bidang pengembangan website.",
+      },
+      {
+        title: "Kecepatan Tinggi",
+        desc:
+          "Berbagai tool tersedia untuk memenuhi kebutuhan user profesional dan developer website.",
+      },
+      {
+        title: "Optimasi WordPress",
+        desc:
+          "Custom-built WP optimization stack dan LiteSpeed cache untuk website yang lebih cepat, peringkat SEO yang lebih baik, serta retensi visitor dan konversi yang lebih meroket.",
+      },
+    ],
+  },
+  featureSection: {
+    more: "Lihat semua produk",
+    features: [
+      {
+        title: "Kemudahan setup",
+        subTitle: "Mudah dan intuitif",
+        desc:
+          "Hanya dengan sekali klik, website Anda siap online. Dapatkan kemudahan untuk semua hal yang Anda butuhkan.",
+        img: easyToSetup,
+      },
+      {
+        title: "Kurangi waktu loading",
+        subTitle: "Performa dan kecepatan",
+        desc:
+          "Kecepatan loading yang melambat akan menghambat kesuksesan bisnis online Anda. Datangkan lebih banyak trafik dengan memaksimalkan performa website.",
+        img: simplyFastWebsite,
+      },
+      {
+        title: "Wordpress mudahkan Segalanya",
+        subTitle: "Pengalaman Wordpress terbaik",
+        desc:
+          "Install WordPress otomatis dengan tool 1-click installer dan mulailah membuat website. Untuk memastikan keandalan, keamanan, dan kecepatan web, backend WordPress dilengkapi dengan LiteSpeed caching dan tool optimasi tingkat lanjut.",
+        img: wpMadeEasy,
+      },
+      {
+        title: "Chat bantuan 24/7/365",
+        subTitle: "Profesional dan berpengalaman",
+        desc:
+          "Tim Customer Support siap membantu Anda dalam mengatasi berbagai permasalahan teknis. Kapan pun Anda butuh bantuan, segera hubungi kami.",
+        img: chatSupport,
+      },
+      {
+        title: "Dari web sederhana hingga berskala besar",
+        subTitle: "fleksibel dan dapat diskalakan",
+        desc:
+          "Masing-masing web dikelola dan dikembangkan dengan teknologi yang berbeda. Pilih paket hosting yang tepat, lalu upgrade seiring dengan perkembangan dan kebutuhan website.",
+        img: microLarge,
+      },
+    ],
+  },
   navbar: {
     lang: "ID",
     user: {
