@@ -27,6 +27,10 @@ import facebook from "../assets/facebook.svg";
 import twitter from "../assets/twitter.svg";
 
 export const content = {
+  contact: {
+    email: "id@hostinger.co.id",
+    phone: "0247-2885350",
+  },
   footer: {
     socialMedia: [
       {

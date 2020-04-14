@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <ContactSection :content="i18n.content.contact" />
     <Header :content="i18n.content.navbar" />
     <SearchDomainSection title="Cari nama domain yang diinginkan. Gratis!" />
     <FeatureSection
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+import ContactSection from "./components/contactsection/ContactSection";
 import Header from "./components/header/Header";
 import SearchDomainSection from "./components/searchdomainsection/SearchDomainSection";
 import BuyNowSection from "./components/buynowsection/BuyNowSection";
@@ -30,6 +32,7 @@ import GuaranteeSection from "./components/guaranteesection/GuaranteeSection";
 export default {
   name: "App",
   components: {
+    ContactSection,
     Header,
     SearchDomainSection,
     BuyNowSection,
