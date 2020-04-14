@@ -13,6 +13,8 @@
       title="Mudah digunakan, cepat, dan dapat diandalkan"
       subTitle="pilih paket hosting dan online website"
     />
+    <GuaranteeSection :content="i18n.content.guarantee" />
+    <Footer :content="i18n.content.footer" />
   </div>
 </template>
 
@@ -22,6 +24,8 @@ import SearchDomainSection from "./components/searchdomainsection/SearchDomainSe
 import BuyNowSection from "./components/buynowsection/BuyNowSection";
 import FeatureSection from "./components/featuresection/FeatureSection";
 import FeatureSpotlight from "./components/featurespotlight/FeatureSpotlight";
+import Footer from "./components/footer/Footer";
+import GuaranteeSection from "./components/guaranteesection/GuaranteeSection";
 
 export default {
   name: "App",
@@ -31,6 +35,8 @@ export default {
     BuyNowSection,
     FeatureSection,
     FeatureSpotlight,
+    GuaranteeSection,
+    Footer,
   },
   data() {
     return {

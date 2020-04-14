@@ -10,13 +10,243 @@ import whoisDatabaseIcon from "../assets/whois-database-ico.svg";
 import chatSupport from "../assets/chat-support.webp";
 import easyToSetup from "../assets/easy-to-setup.svg";
 import microLarge from "../assets/micro-large.svg";
-// import powerfulSlideone from "../assets/powerful_slide_1.webp";
-// import powerfulSlidethree from "../assets/powerful_slide_3.webp";
 import simplyFastWebsite from "../assets/simply-fast-websites.webp";
 import speedSlidetwo from "../assets/speed_slide_2.webp";
 import wpMadeEasy from "../assets/wp-made-easy.webp";
+import shield from "../assets/shield.svg";
+import custom from "../assets/custom-g.webp";
+import visa from "../assets/visa-g.webp";
+import masterCard from "../assets/mastercard-g.webp";
+import paypal from "../assets/paypal-g.webp";
+import discover from "../assets/discover-g.webp";
+import maestro from "../assets/maestro-g.webp";
+import americanExpress from "../assets/american-express-g.webp";
+import linkedin from "../assets/linked-in.svg";
+import instagram from "../assets/instagram.svg";
+import facebook from "../assets/facebook.svg";
+import twitter from "../assets/twitter.svg";
 
 export const content = {
+  footer: {
+    socialMedia: [
+      {
+        name: "linkedIn",
+        img: linkedin,
+        link: "#",
+      },
+      {
+        name: "Instagram",
+        img: instagram,
+        link: "#",
+      },
+      {
+        name: "Facebook",
+        img: facebook,
+        link: "#",
+      },
+      {
+        name: "twitter",
+        img: twitter,
+        link: "#",
+      },
+    ],
+    paymentMethods: [
+      {
+        method: "custom",
+        img: custom,
+      },
+      {
+        method: "visa",
+        img: visa,
+      },
+      {
+        method: "master card",
+        img: masterCard,
+      },
+      {
+        method: "paypal",
+        img: paypal,
+      },
+      {
+        method: "discover",
+        img: discover,
+      },
+      {
+        method: "maestro",
+        img: maestro,
+      },
+      {
+        method: "american express",
+        img: americanExpress,
+      },
+    ],
+    about:
+      "Hostinger adalah penyedia layanan web hosting murah pertama di dunia. Pilihan tepat bagi siapa pun yang mencari hosting terjangkau tetapi fiturnya berkualitas tinggi.",
+    menus: [
+      {
+        title: "Hosting",
+        submenu: [
+          {
+            title: "Web Hosting Terbaik",
+            link: "#",
+          },
+          {
+            title: "VPS Murah Indonesia",
+            link: "#",
+          },
+          {
+            title: "Cloud Hosting Indonesia",
+            link: "#",
+          },
+          {
+            title: "WordPress Hosting Murah",
+            link: "#",
+          },
+          {
+            title: "Email Hosting Indonesia",
+            link: "#",
+          },
+          {
+            title: "CMS Hosting Indonesia",
+            link: "#",
+          },
+          {
+            title: "Ecommerce Hosting",
+            link: "#",
+          },
+          {
+            title: "Website Hosting Gratis",
+            link: "#",
+          },
+          {
+            title: "Website Builder",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Domain",
+        submenu: [
+          {
+            title: "Domain Murah",
+            link: "#",
+          },
+          {
+            title: "Domain Transfer",
+            link: "#",
+          },
+          {
+            title: "Domain Gratis",
+            link: "#",
+          },
+          {
+            title: "Domain XYZ",
+            link: "#",
+          },
+          {
+            title: "Sertifikat SSL",
+            link: "#",
+          },
+          {
+            title: "Beli Domain",
+            link: "#",
+          },
+          {
+            title: "Cek Whois",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Informasi",
+        submenu: [
+          {
+            title: "Status Server",
+            link: "#",
+          },
+          {
+            title: "Cari Uang Online",
+            link: "#",
+          },
+          {
+            title: "Review",
+            link: "#",
+          },
+          {
+            title: "Metode Pembayaran",
+            link: "#",
+          },
+          {
+            title: "Penghargaan",
+            link: "#",
+          },
+          {
+            title: "Youtube Creator",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Bantuan",
+        submenu: [
+          {
+            title: "Laporkan Penyalahgunaan",
+            link: "#",
+          },
+          {
+            title: "Pengetahuan Dasar",
+            link: "#",
+          },
+          {
+            title: "Tutorial",
+            link: "#",
+          },
+          {
+            title: "Blog",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Perusahaan",
+        submenu: [
+          {
+            title: "Tentang Kami",
+            link: "#",
+          },
+          {
+            title: "Hubungi Kami",
+            link: "#",
+          },
+          {
+            title: "Lowongan kerja",
+            link: "#",
+          },
+        ],
+      },
+      {
+        title: "Legal",
+        submenu: [
+          {
+            title: "Kebijakan Privasi",
+            link: "#",
+          },
+          {
+            title: "Ketentuan Penggunaan",
+            link: "#",
+          },
+        ],
+      },
+    ],
+  },
+  guarantee: {
+    top: {
+      img: shield,
+      title: "Jaminan 30 hari uang kembali",
+      desc:
+        "Jika tidak puas dengan layanan yang ditawarkan, kami akan mengembalikan uang Anda sepenuhnya. Tanpa syarat!",
+    },
+  },
   featureSpotlight: {
     title: "User-Friendly Control Panel",
     img: speedSlidetwo,
