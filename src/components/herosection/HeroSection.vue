@@ -50,7 +50,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 4rem;
+  padding: 4rem 1rem;
 }
 
 .discount-btn {
@@ -92,7 +92,7 @@ export default {
   .hero-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 6rem;
   }
 
   .wrapper {

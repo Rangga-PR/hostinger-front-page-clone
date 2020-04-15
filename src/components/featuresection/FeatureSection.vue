@@ -52,7 +52,7 @@ export default {
   color: $hostingerPurple;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .feature-subtitle,
   .feature-title,
   .feature-desc,
@@ -66,9 +66,10 @@ export default {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .feature-container {
     display: flex;
+    padding: 4rem 6rem;
 
     &:nth-child(odd) {
       flex-flow: row-reverse;

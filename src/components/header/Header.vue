@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navbar-container">
     <nav id="navbar" class="navbar">
       <div class="navbar-brand">
         <a href="#" class="navbar-item">
@@ -170,12 +170,6 @@ export default {
   letter-spacing: 1.5px;
 }
 
-@media only screen and (min-width: 1023px) {
-  .menu-text {
-    font-size: 16px;
-  }
-}
-
 .menu-sub-text {
   color: #9999ac;
   font-size: 14px;
@@ -206,6 +200,7 @@ export default {
   justify-content: space-between;
   position: absolute;
   width: 100%;
+  padding: 0 1rem;
 
   &.is-sticky {
     position: fixed;
@@ -249,12 +244,6 @@ export default {
     transition: 0.3s;
     opacity: 0.7;
   }
-
-  @media only screen and (min-width: 1023px) {
-    .burger {
-      display: none;
-    }
-  }
 }
 
 .center-content {
@@ -269,5 +258,19 @@ export default {
 
 .navbar-link:not(.is-arrowless)::after {
   border-color: white;
+}
+
+@media only screen and (min-width: 1023px) {
+  .menu-text {
+    font-size: 16px;
+  }
+
+  .navbar {
+    padding: 0 5rem;
+  }
+
+  .burger {
+    display: none;
+  }
 }
 </style>

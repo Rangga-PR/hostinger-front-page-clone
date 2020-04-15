@@ -1,5 +1,6 @@
 <template>
   <div class="container is-fluid">
+    <div class="buy-now-wrapper"></div>
     <h2 class="title is-3">{{title}}</h2>
     <p class="sub-title">{{subTitle}}</p>
     <div class="columns is-mobile is-centered">
@@ -29,7 +30,7 @@ export default {
 @import "../../styles/_variables.scss";
 
 .container {
-  padding: 50px 0;
+  padding: 6rem 0;
   background-color: $hostingerPurple;
 }
 

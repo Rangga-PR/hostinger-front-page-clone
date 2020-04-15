@@ -38,6 +38,7 @@ export default {
 
 .feature-spotlight-container {
   margin-top: 200px;
+  padding: 0 6rem;
 }
 
 .title {
@@ -67,6 +68,7 @@ export default {
 
   .feature-spotlight-container {
     margin-top: 20px;
+    padding: 1rem;
   }
 }
 </style>

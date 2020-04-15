@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <ContactSection id="contact-section" :content="i18n.content.contact" />
+    <ContactSection class="padded" id="contact-section" :content="i18n.content.contact" />
     <Header id="header" :content="i18n.content.navbar" />
     <HeroSection :content="i18n.content.heroSection" />
+    <ProductSection :content="i18n.content.productSection" />
     <SearchDomainSection title="Cari nama domain yang diinginkan. Gratis!" />
     <FeatureSection
       v-for="(feature, i) in i18n.content.featureSection.features"
@@ -30,6 +31,7 @@ import FeatureSpotlight from "./components/featurespotlight/FeatureSpotlight";
 import Footer from "./components/footer/Footer";
 import GuaranteeSection from "./components/guaranteesection/GuaranteeSection";
 import HeroSection from "./components/herosection/HeroSection";
+import ProductSection from "./components/productSection/ProductSection";
 
 export default {
   name: "App",
@@ -42,6 +44,7 @@ export default {
     FeatureSpotlight,
     GuaranteeSection,
     HeroSection,
+    ProductSection,
     Footer,
   },
   data() {
@@ -58,6 +61,6 @@ export default {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
+  padding: 0 0;
 }
 </style>

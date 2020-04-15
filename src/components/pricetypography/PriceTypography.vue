@@ -1,8 +1,8 @@
 <template>
   <div class="price-container">
-    <div class="currency">{{currency + "."}}</div>
-    <div class="big-number">{{price}}</div>
-    <div class="per-time">{{"/" + perTime}}</div>
+    <div class="currency" :class="isProductCard ? 'is-product-card': ''">{{currency + "."}}</div>
+    <div class="big-number" :class="isProductCard ? 'is-product-card': ''">{{price}}</div>
+    <div class="per-time" :class="isProductCard ? 'is-product-card': ''">{{"/" + perTime}}</div>
   </div>
 </template>
 
@@ -13,6 +13,7 @@ export default {
     currency: String,
     price: String,
     perTime: String,
+    isProductCard: Boolean,
   },
 };
 </script>
@@ -26,21 +27,36 @@ export default {
 .big-number,
 .per-time {
   color: white;
+
+  &.is-product-card {
+    color: #212529;
+  }
 }
 
 .per-time {
   align-self: flex-end;
+  &.is-product-card {
+    font-size: 8px;
+  }
 }
 
 .currency {
   font-weight: 700;
   font-size: 1.5rem;
+
+  &.is-product-card {
+    font-size: 16px;
+  }
 }
 
 .big-number {
   font-size: 5rem;
   font-weight: 700;
   line-height: 0.8em;
+
+  &.is-product-card {
+    font-size: 48px;
+  }
 }
 
 @media only screen and(min-width: 1023px) {

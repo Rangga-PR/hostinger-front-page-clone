@@ -27,6 +27,292 @@ import facebook from "../assets/facebook.svg";
 import twitter from "../assets/twitter.svg";
 
 export const content = {
+  productSection: {
+    addToCart: "Tambahkan ke cart",
+    seeAll: "klik untuk lihat semua fitur",
+    productList: [
+      {
+        category: "Cloud Hosting Indonesia",
+        product: [
+          {
+            name: "Startup",
+            originalPrice: "Rp.351,103",
+            discountedPrice: {
+              currency: "Rp",
+              number: "8,739",
+              perTime: "bln",
+            },
+            discount: "Diskon 77%",
+            term: "Rp.232,799/bln saat diperpanjang",
+            feature: [
+              {
+                name: "Jumlah Website <b>Unlimited</b>",
+                green: true,
+              },
+              {
+                name: "SSD Storage <b>100GB</b>",
+                green: false,
+              },
+              {
+                name: "<b>3 GB</b> RAM",
+                green: false,
+              },
+              {
+                name: "<b>2</b> CPU Core",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Professional",
+            tag: "TERPOPULER",
+            originalPrice: "Rp.702,206",
+            discountedPrice: {
+              currency: "Rp",
+              number: "163,399",
+              perTime: "bln",
+            },
+            discount: "Diskon 77%",
+            term: "Rp.465,599/bln saat diperpanjang",
+            feature: [
+              {
+                name: "Jumlah Website <b>Unlimited</b>",
+                green: true,
+              },
+              {
+                name: "SSD Storage <b>140GB</b>",
+                green: false,
+              },
+              {
+                name: "<b>6 GB</b> RAM",
+                green: false,
+              },
+              {
+                name: "<b>4</b> CPU Core",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Cloud Global",
+            googleCloudSupport: "Didukung oleh",
+            originalPrice: "Rp.1,358,100",
+            discountedPrice: {
+              currency: "Rp",
+              number: "502,497",
+              perTime: "bln",
+            },
+            discount: "Diskon 63%",
+            term: "Rp.1,086,480/bln saat diperpanjang",
+            feature: [
+              {
+                name: "Jumlah Website <b>Unlimited</b>",
+                green: true,
+              },
+              {
+                name: "SSD Storage <b>200GB</b>",
+                green: true,
+              },
+              {
+                name: "<b>16 GB</b> RAM",
+                green: true,
+              },
+              {
+                name: "<b>8</b> CPU Core",
+                green: true,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        category: "Web Hosting Terbaik",
+        product: [
+          {
+            name: "Web Hosting Single",
+            originalPrice: "Rp.87,295",
+            discountedPrice: {
+              currency: "Rp",
+              number: "8,739",
+              perTime: "bln",
+            },
+            discount: "Diskon 90%",
+            term: "Rp.13,850/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>1</b> Website",
+                green: false,
+              },
+              {
+                name: "<b>1</b> Akun Email",
+                green: false,
+              },
+              {
+                name: "<b>Limited<b/> Bandwidth (100GB)",
+                green: false,
+              },
+              {
+                name: "<b>1X<b/> Processing Power & Memory",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Web Hosting Premium",
+            tag: "TERPOPULER",
+            originalPrice: "Rp.130,559",
+            discountedPrice: {
+              currency: "Rp",
+              number: "23,489",
+              perTime: "bln",
+            },
+            discount: "Diskon 82%",
+            term: "Rp.29,950/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>Unlimited*</b> Jumlah Website",
+                green: true,
+              },
+              {
+                name: "<b>Unlimited*</b> Akun Email",
+                green: true,
+              },
+              {
+                name: "<b>Unlimited*</b> Bandwidth",
+                green: true,
+              },
+              {
+                name: "<b>2X</b> Processing Power & Memory",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Web Hosting Bisnis",
+            originalPrice: "Rp.174,265",
+            discountedPrice: {
+              currency: "Rp",
+              number: "37,695",
+              perTime: "bln",
+            },
+            discount: "Diskon 78%",
+            term: "Rp.45,950/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>Semua Fitur dari Paket Premium</b>",
+                green: true,
+              },
+              {
+                name: "Backup <b>Harian</b>",
+                green: true,
+              },
+              {
+                name: "<b>Gratis</b> Sertifikat SSL",
+                green: true,
+              },
+              {
+                name: "<b>4X</b> Processing Power & Memory",
+                green: true,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        category: "VPS Murah Indonesia",
+        product: [
+          {
+            name: "Server VPS Paket 1",
+            originalPrice: "Rp.130,729",
+            discountedPrice: {
+              currency: "Rp",
+              number: "57,699",
+              perTime: "bln",
+            },
+            discount: "Diskon 56%",
+            term: "Rp.87,611/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>1 GB</b> RAM (2 GB Burst)",
+                green: false,
+              },
+              {
+                name: "<b>1X</b> CPU (2.4 GHz)",
+                green: false,
+              },
+              {
+                name: "Disk Space <b>20 GB</b>",
+                green: false,
+              },
+              {
+                name: "Bandwidth <b>1000 GB</b>",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Server VPS Paket 2",
+            tag: "TERPOPULER",
+            originalPrice: "Rp.291,405",
+            discountedPrice: {
+              currency: "Rp",
+              number: "130,729",
+              perTime: "bln",
+            },
+            discount: "Diskon 55%",
+            term: "Rp.175,301/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>2 GB</b> RAM (4 GB Burst)",
+                green: false,
+              },
+              {
+                name: "<b>2X</b> CPU (2.4 GHz)",
+                green: false,
+              },
+              {
+                name: "Disk Space <b>40 GB</b>",
+                green: false,
+              },
+              {
+                name: "Bandwidth <b>2000 GB</b>",
+                green: false,
+              },
+            ],
+          },
+          {
+            name: "Server VPS Paket 5",
+            originalPrice: "Rp.1,167,799",
+            discountedPrice: {
+              currency: "Rp",
+              number: "349,829",
+              perTime: "bln",
+            },
+            discount: "Diskon 70%",
+            term: "Rp.526,061/bln saat diperpanjang",
+            feature: [
+              {
+                name: "<b>6 GB</b> RAM (12 GB Burst)",
+                green: true,
+              },
+              {
+                name: "<b>6X</b> CPU (2.4 GHz)",
+                green: true,
+              },
+              {
+                name: "Disk Space <b>120 GB</b>",
+                green: true,
+              },
+              {
+                name: "Bandwidth <b>6000 GB</b>",
+                green: true,
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
   heroSection: {
     title: "Web Hosting Cepat & Aman",
     subTitle: "Penawaran terbatas: dapatkan sertifikat SSL GRATIS",

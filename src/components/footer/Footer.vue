@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="footer-container">
     <div class="columns">
       <div v-for="(menu, i) in firstThreeMenus" :key="`footer_menu-${i}`" class="column">
         <VerticalMenu :menus="menu" />
       </div>
-      <div class="column is-4 about-section">
+      <div class="column is-5 about-section">
         <div class="about-us">
           <img class="brand" :src="logo" alt />
           <p class="about">{{content.about}}</p>
@@ -76,8 +76,12 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/_variables.scss";
 
-.columns {
+.footer-container {
   background-color: $hostingerDark;
+  padding: 0 0.5rem;
+}
+
+.columns {
   margin: 0;
   padding: 40px 0;
   border-top: 1px solid white;
@@ -117,8 +121,8 @@ export default {
 .payment-method {
   border: 1px solid $hostingerLightGray;
   border-radius: 5px;
-  padding: 1px 0;
-  margin-right: 5px;
+  padding: 1px;
+  margin-right: 1px;
   opacity: 0.7;
 }
 
@@ -134,7 +138,7 @@ export default {
   padding-left: 0;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .about-section {
     flex-direction: column;
   }
@@ -151,6 +155,10 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer-container {
+    padding: 0 6rem;
   }
 }
 </style>
