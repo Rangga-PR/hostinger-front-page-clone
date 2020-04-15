@@ -27,6 +27,28 @@ import facebook from "../assets/facebook.svg";
 import twitter from "../assets/twitter.svg";
 
 export const content = {
+  heroSection: {
+    title: "Web Hosting Cepat & Aman",
+    subTitle: "Penawaran terbatas: dapatkan sertifikat SSL GRATIS",
+    bigDiscount: {
+      discount: "Diskon 90%",
+      buyNow: "Beli Sekarang",
+      price: {
+        currency: "Rp",
+        number: "8,739",
+        perTime: "bln",
+      },
+      countDown: {
+        date: "May 22, 2020 17:37:25",
+      },
+    },
+    dateTime: {
+      days: "HARI",
+      hours: "JAM",
+      minutes: "MENIT",
+      seconds: "DETIK",
+    },
+  },
   contact: {
     email: "id@hostinger.co.id",
     phone: "0247-2885350",

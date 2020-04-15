@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
       <div class="navbar-brand">
         <a href="#" class="navbar-item">
           <img :src="images.logo" alt="hostinger logo" width="150" height="28" />
@@ -110,6 +110,21 @@ export default {
       this.dropMenu = !this.dropMenu;
     },
   },
+  mounted: function() {
+    const navbarComponent = document.querySelector("#navbar");
+    const headerComponent = document.querySelector("#header");
+
+    const handler = entries => {
+      if (!entries[0].isIntersecting) {
+        navbarComponent.classList.add("is-sticky");
+      } else {
+        navbarComponent.classList.remove("is-sticky");
+      }
+    };
+
+    const observer = new window.IntersectionObserver(handler);
+    observer.observe(headerComponent);
+  },
 };
 </script>
 
@@ -117,12 +132,12 @@ export default {
 @import "../../styles/_variables.scss";
 
 .mobile-menu {
-  position: relative;
+  position: absolute;
   z-index: 1000;
-  top: -7.5vh;
+  top: 2vh;
   left: 1.5%;
   width: 97vw;
-  height: 85vh;
+  height: 88vh;
   border-radius: 5px;
   background-color: white;
   overflow: auto;
@@ -155,7 +170,7 @@ export default {
   letter-spacing: 1.5px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .menu-text {
     font-size: 16px;
   }
@@ -181,11 +196,22 @@ export default {
   }
 }
 
-.navbar,
 .menu {
-  background-color: $hostingerPurple;
+  display: flex;
+}
+
+.navbar {
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  width: 100%;
+
+  &.is-sticky {
+    position: fixed;
+    top: 0;
+    background-color: $hostingerPurple;
+  }
 
   .burger,
   .lang,
@@ -224,7 +250,7 @@ export default {
     opacity: 0.7;
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1023px) {
     .burger {
       display: none;
     }

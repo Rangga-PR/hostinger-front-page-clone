@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <ContactSection :content="i18n.content.contact" />
-    <Header :content="i18n.content.navbar" />
+    <ContactSection id="contact-section" :content="i18n.content.contact" />
+    <Header id="header" :content="i18n.content.navbar" />
+    <HeroSection :content="i18n.content.heroSection" />
     <SearchDomainSection title="Cari nama domain yang diinginkan. Gratis!" />
     <FeatureSection
       v-for="(feature, i) in i18n.content.featureSection.features"
@@ -28,6 +29,7 @@ import FeatureSection from "./components/featuresection/FeatureSection";
 import FeatureSpotlight from "./components/featurespotlight/FeatureSpotlight";
 import Footer from "./components/footer/Footer";
 import GuaranteeSection from "./components/guaranteesection/GuaranteeSection";
+import HeroSection from "./components/herosection/HeroSection";
 
 export default {
   name: "App",
@@ -39,6 +41,7 @@ export default {
     FeatureSection,
     FeatureSpotlight,
     GuaranteeSection,
+    HeroSection,
     Footer,
   },
   data() {
@@ -46,9 +49,6 @@ export default {
       i18n: require("./i18n/content-id.js"),
     };
   },
-  // created: function() {
-  //   console.log(this.i18n.content);
-  // },
 };
 </script>
 
@@ -58,5 +58,6 @@ export default {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
 </style>
