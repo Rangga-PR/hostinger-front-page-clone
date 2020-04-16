@@ -58,7 +58,7 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        title: "vue app",
+        title: "Hostinger Clone",
         template: "./src/index.html",
         minify: {
           collapseWhitespace: true,
