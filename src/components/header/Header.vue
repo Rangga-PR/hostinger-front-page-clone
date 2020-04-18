@@ -23,9 +23,9 @@
             v-for="(menu, i) in content.desktop.menu"
             :key="`${menu.text + '-' + i}`"
           >
-            <a v-if="!menu.children" href="#" class="navbar-item">{{
-              menu.text
-            }}</a>
+            <a v-if="!menu.children" href="#" class="navbar-item">
+              {{ menu.text }}
+            </a>
 
             <div v-else class="navbar-item is-hoverable">
               <a href="#" class="navbar-link">{{ menu.text }}</a>
@@ -103,6 +103,8 @@
 </template>
 
 <script>
+  require("intersection-observer");
+
   export default {
     name: "h-header",
     props: {
@@ -124,21 +126,24 @@
       toggleDropdown: function() {
         this.dropMenu = !this.dropMenu;
       },
+      observeHeader: function() {
+        const navbarComponent = document.querySelector("#navbar");
+        const headerComponent = document.querySelector("#header");
+
+        const handler = entries => {
+          if (!entries[0].isIntersecting) {
+            navbarComponent.classList.add("is-sticky");
+          } else {
+            navbarComponent.classList.remove("is-sticky");
+          }
+        };
+
+        const observer = new IntersectionObserver(handler);
+        observer.observe(headerComponent);
+      },
     },
     mounted: function() {
-      const navbarComponent = document.querySelector("#navbar");
-      const headerComponent = document.querySelector("#header");
-
-      const handler = entries => {
-        if (!entries[0].isIntersecting) {
-          navbarComponent.classList.add("is-sticky");
-        } else {
-          navbarComponent.classList.remove("is-sticky");
-        }
-      };
-
-      const observer = new window.IntersectionObserver(handler);
-      observer.observe(headerComponent);
+      this.observeHeader();
     },
   };
 </script>
