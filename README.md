@@ -1,8 +1,8 @@
 ### Build with
 
-*Vue JS 2
-*Bulma
-*Webpack 4
+- Vue JS 2
+- Bulma
+- Webpack 4
 
 Boilerplate can be found on : https://github.com/Rangga-PR/vue-webpack-boilerplate
 
