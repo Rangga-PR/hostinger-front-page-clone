@@ -5,7 +5,9 @@
     <p class="sub-title">{{subTitle}}</p>
     <div class="columns is-mobile is-centered">
       <div class="column is-one-fifth-desktop is-9-mobile">
-        <Button class="buy-now-btn" variant="red" stretch text="Beli sekarang" />
+        <a href="#">
+          <Button class="buy-now-btn" variant="red" stretch text="Beli sekarang" />
+        </a>
       </div>
     </div>
   </div>
