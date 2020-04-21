@@ -29,7 +29,7 @@ module.exports = merge(common, {
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: "vue app",
+      title: "hostinger front page",
       template: "./src/index.html",
     }),
   ],
